@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "house-party": {
+    "angular-tailwind": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/house-party",
+            "outputPath": "dist/angular-tailwind",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "house-party:build:production"
+              "browserTarget": "angular-tailwind:build:production"
             },
             "development": {
-              "browserTarget": "house-party:build:development"
+              "browserTarget": "angular-tailwind:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "house-party:build"
+            "browserTarget": "angular-tailwind:build"
           }
         },
         "test": {
@@ -103,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "cb8b7515-d49a-4357-b0e2-f05f5c8e6f70"
   }
 }
